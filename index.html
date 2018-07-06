@@ -6,6 +6,7 @@
 
   <title>Digital Resume</title>
 
+  <!-- Acts as a replacement for the bootstrap stylesheet -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
 
@@ -15,39 +16,44 @@
 </head>
 
 <body>
-
+    
     <div class="container">
+        
+        <div class="row justify-content-end header">
+          <h1>Kevin Tan</h1> 
+            <nav class="nav">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+        </div>
 
-      <div class="row justify-content-center">
-          <nav class="nav">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">About</a>
-          <a class="nav-link" href="#">Portfolio</a>
-          <a class="nav-link" href="#">Contact</a>
-          </nav>
-      </div>
-
-
-      <div class="row">
-          <div class="col-md-12">
-          <div class="jumbotron">
-              <div class="row">
-                    <img src="https://avatars2.githubusercontent.com/u/24780114?s=200&v=4" class="img-fluid card-img-top" alt="Card image cap">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="jumbotron">
+                    <div class="row">
+                        <img src="https://avatars2.githubusercontent.com/u/24780114?s=200&v=4" class="img-fluid card-img-top" alt="Card image cap">
+                    </div>
+                    <h1 class="display-5">Lambda School Student: Kevin Tan</h1>
+                    <hr class="my-4">
+                    <p>Occasionally I Do Code Challenges, Watch Lectures, Pair Program, and Talk To Austin French</p>
+                    <button type="button" class="btn btn-primary">Email Me</button>
+                    </hr>
+                </div>
             </div>
-              <h1 class="display-5">Lambda School Student: Kevin Tan</h1>
-              <hr class="my-4">
-              <p>Occasionally I Do Code Challenges, Watch Lectures, Pair Program, and Talk To Austin French</p>
-              <p class="lead">
-              </p>
-              <p>
-                  <button type="button" class="btn btn-primary">Email Me</button>
-              </p>
+            <div class="col-md-5">
+                <h4>Stuff I'm Good At:</h4>
+                <ul class="list-group">
+                <li class="list-group-item">Eating</li>
+                <li class="list-group-item">Learning How To Code</li>
+                <li class="list-group-item">Lifting</li>
+                <li class="list-group-item">Reading</li>
+                <li class="list-group-item">Waking Up Early</li>
+            </div>
+        </div>
 
-          </div>
-          </div>
-      </div>
-
-      <div class="row">
+        <div class="row">
           <div class="para col-sm-12">
           <h2>About Me</h2>
           <p>I aspire to be a great programmer and to do so I will put forth the most of my time and energy. I will strive to work diligently while doing my best.
@@ -57,16 +63,6 @@
 
     <div class="row">
 
-      <div class="col-sm-6">
-          <h4>Stuff I'm Good At:</h4>
-          <ul class="list-group">
-          <li class="list-group-item">Eating</li>
-          <li class="list-group-item">Learning How To Code</li>
-          <li class="list-group-item">Lifting</li>
-          <li class="list-group-item">Reading</li>
-          <li class="list-group-item">Waking Up Early</li>
-      </ul>
-      </div>
       <div class="col-sm-6 table-row no-gutters">
           <h4>Work History</h4>
           <table class="table table-striped">

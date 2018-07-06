@@ -1,5 +1,11 @@
 // Start here!
 
+// Variables
+
+// Colors
+@hoverColor: blue + green;
+
+
 // Mixins
 
 .border-radius (@radius: 15px) {
@@ -12,26 +18,46 @@
 	background-clip:         padding-box;
 }
 
-// Code Below
+body {
+    background: lightgrey;
+}
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
-    display: flex;
     flex-flow: column wrap;
 }
 
-.nav {
-    font-size: 20px;
+// Header
 
-    a:link {
-        color: black;
+.header {
+    background: navy;
+    .border-radius();
+    color: lightblue;
+    h1 {
+        margin-right: 3%;
+    }
+    .nav {
+        .border-radius();
+        background: tan;
+        font-size: 20px;
+        font-weight: bold;
+        a:link {
+            color: black;
+            margin-top: 5px;
+        }
+        a:visited {
+            color: navy;
+        }
+        a:hover {
+            color: @hoverColor;
+        }
     }
 }
 
 .jumbotron {
     background-color: teal;
-    .border-radius;
+    // .border-radius();
 
     h1,p {
         margin-top: 40px;

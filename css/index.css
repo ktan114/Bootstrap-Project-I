@@ -1,23 +1,47 @@
+body {
+  background: lightgrey;
+}
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
-  display: flex;
   flex-flow: column wrap;
 }
-.nav {
-  font-size: 20px;
-}
-.nav a:link {
-  color: black;
-}
-.jumbotron {
-  background-color: teal;
+.header {
+  background: navy;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  color: lightblue;
+}
+.header h1 {
+  margin-right: 3%;
+}
+.header .nav {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: tan;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header .nav a:link {
+  color: black;
+  margin-top: 5px;
+}
+.header .nav a:visited {
+  color: navy;
+}
+.header .nav a:hover {
+  color: #0080ff;
+}
+.jumbotron {
+  background-color: teal;
 }
 .jumbotron h1,
 .jumbotron p {
