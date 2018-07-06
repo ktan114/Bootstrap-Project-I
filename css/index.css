@@ -1,10 +1,12 @@
 body {
-  background: lightgrey;
+  background-image: url("https://cdn.static-economist.com/sites/default/files/images/print-edition/20170722_STP001_0.jpg");
+  background-size: cover;
 }
 .container {
   max-width: 1000px;
   width: 100%;
   flex-flow: column wrap;
+  opacity: .9;
 }
 .header {
   background: #0080ff;
@@ -15,6 +17,7 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: black;
+  margin-top: 20px;
 }
 .header h1 {
   margin-right: 3%;
@@ -52,6 +55,9 @@ body {
 }
 .about-me h2 {
   margin: 10px auto;
+}
+.about-me .para {
+  padding: 0 auto;
 }
 .about-me .para p {
   border: 3px solid rgba(0, 0, 0, 0.125);
@@ -126,7 +132,7 @@ body {
 }
 .work-history {
   background: #f5f5f5;
-  margin-top: 25px;
+  margin: 25px -15px 10px -15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
