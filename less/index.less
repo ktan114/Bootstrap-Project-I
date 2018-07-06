@@ -3,8 +3,7 @@
 // Variables
 
 // Colors
-@hoverColor: blue + green;
-
+@blueGreen: blue + green;
 
 // Mixins
 
@@ -18,9 +17,13 @@
 	background-clip:         padding-box;
 }
 
+// Body
+
 body {
-    background: lightgrey;
+    background: lightgrey; 
 }
+
+// Container
 
 .container {
     max-width: 1000px;
@@ -31,15 +34,15 @@ body {
 // Header
 
 .header {
-    background: navy;
+    background: @blueGreen;
     .border-radius();
-    color: lightblue;
+    color: black;
     h1 {
         margin-right: 3%;
     }
     .nav {
         .border-radius();
-        background: tan;
+        background: wheat;
         font-size: 20px;
         font-weight: bold;
         a:link {
@@ -50,7 +53,7 @@ body {
             color: navy;
         }
         a:hover {
-            color: @hoverColor;
+            color: blue;
         }
     }
 }
@@ -58,31 +61,69 @@ body {
 // About Me
 
 .about-me {
-    margin: 20px auto;
-}
-
-
-.jumbotron {
-    background-color: teal;
-    // .border-radius();
-
-    h1,p {
-        margin-top: 40px;
+    background: white;
+    margin: 25px auto;
+    .border-radius();
+    h2 {
+        margin: 10px auto;
     }
-
-    img {
-        .border-radius(25%);
-        width: 50%;
-    }
-
-
-
-    button {
-        .border-radius(50px);
+    .para p {
+        border: 3px solid black;
+        .border-radius();
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 25px;
     }
 }
-.para p {
-	width: 100%;
-	border: 1px solid black;
 
+// Middle Content
+
+.jumbo {
+    padding-right: 0px;
+    background: @blueGreen;
+    .border-radius();
+    .jumbotron {
+        background-color: @blueGreen;
+        h1,p {
+            margin-top: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        img {
+            .border-radius(25%);
+            width: 45%;
+        }
+        button {
+            .border-radius(50px);
+        }
+    }
+}
+
+.skills {
+    background: wheat;
+    .border-radius();
+    font-weight: bold;
+    h2 {
+        color: black;
+        margin-top: 20px;
+    }
+    .list-group-item {
+        background: wheat;
+        color: navy;
+    }
+}
+
+// Work History
+
+.work-history {
+    background: white;
+    margin-top: 25px;
+    .border-radius();
+}
+.work {
+    margin-top: 20px;
+}
+.next-work {
+    margin-top: 55px;
 }
